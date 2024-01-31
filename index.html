@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slide Puzzle</title>
+        <style>
+            #downloadAudioLink {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #downloadAudioLink:hover {
+            background-color: #45a049;
+        }
+        </style>
+        <link rel="stylesheet" href="puzzle.css">
+        <script src="puzzle.js"></script>
+    </head>
+    
+    <body>
+        <img id="title" src="./logo.png">
+        <div id="board"></div>
+        <h1>Turns: <span id="turns">0</span></h1>
+        <button onclick="checkPuzzleCompletion()" class="button">Check</button>
+        <div id="message"></div>
+        <a id="downloadAudioLink" style="display:none" download="audio.mp3">
+            Download Audio
+        </a>
+    
+        <audio id="Audio" src="Audio.mp3"></audio>
+    </body>
+</html>
